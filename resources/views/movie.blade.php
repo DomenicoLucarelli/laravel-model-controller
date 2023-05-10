@@ -17,19 +17,23 @@
 
 <body>
 
+    
+            <h1 class="text-center">Movies</h1>
    
-
+    <div class="container">
         @foreach ($movies as $movie)
         <div class="card" style="width: 18rem;">
             <div class="card-body">
-              <h5 class="card-title">Title: {{$movie->title}}</h5>
-              <h6 class="card-subtitle mb-2 text-body-secondary">Original title: {{$movie->original_title}}</h6>
-              <h6 class="card-subtitle mb-2 text-body-secondary">Nationality: {{$movie->nationality}}</h6>
-              <h6 class="card-subtitle mb-2 text-body-secondary">Date: {{$movie->date}}</h6>
-              <h6 class="card-subtitle mb-2 text-body-secondary">Vote: {{$movie->vote}}</h6>
+                <h5 class="card-title"><b>Title:</b> {{$movie->title}}</h5>
+                <h6 class="card-subtitle mb-2 text-body-secondary"><b>Original title:</b> {{$movie->original_title}}</h6>
+                <h6 class="card-subtitle mb-2 text-body-secondary"><b>Nationality:</b> {{$movie->nationality}}</h6>
+                <h6 class="card-subtitle mb-2 text-body-secondary"><b>Date:</b> {{$movie->date}}</h6>
+                <h6 class="card-subtitle mb-2 text-body-secondary"><b>Vote:</b> {{$movie->vote}}</h6>
             </div>
-          </div>
+            </div>
         @endforeach
+
+    </div>
     
 
 </body>
